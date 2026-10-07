@@ -1,15 +1,17 @@
 # WarDogs EPM RCon releases
 
-Public installers and compiled releases for the WAR DOGS administration panel. Application source stays in the private EPM-Cortez/WarDogs-EPM-RCon repository.
+Public installers and compiled releases for the WAR DOGS administration panel and API. This repository distributes the RCon application only. Application source stays in the private EPM-Cortez/WarDogs-EPM-RCon repository.
 
 Containers are delivered through GitHub Container Registry:
 
 - ghcr.io/epm-cortez/wardogs-epm-rcon-panel
 - ghcr.io/epm-cortez/wardogs-epm-rcon-backend
 
+The panel image contains the compiled API and administration frontend. The backend image contains the compiled API only.
+
 A stable release provides signed metadata, immutable image references, installers, the deployment bundle, and the host updater. Candidate prereleases are for explicit testing and do not advance the stable update feed.
 
-If there is no stable release under [Releases](https://github.com/EPM-Cortez/WarDogs-EPM-RCon-Releases/releases), the initial publication is still being prepared. The commands below become usable after its installation/container checks pass and it is promoted to stable.
+The commands below install the latest signed stable release from [Releases](https://github.com/EPM-Cortez/WarDogs-EPM-RCon-Releases/releases).
 
 Linux VPS installation uses the shell bootstrap. Windows Docker Desktop installation uses PowerShell with a WSL2 Linux distribution and Docker Desktop integration. Both download compiled images; owners do not need Git access, Node.js, or a .NET SDK.
 
